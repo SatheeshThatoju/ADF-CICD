@@ -1,0 +1,35 @@
+{
+	"name": "DS_Source_Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Fldr_nm": {
+				"type": "string"
+			},
+			"File_nm": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().File_nm",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat('raw/BV/',dataset().Fldr_nm)",
+					"type": "Expression"
+				},
+				"fileSystem": "devcontainer"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
