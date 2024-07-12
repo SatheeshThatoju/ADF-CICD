@@ -4,24 +4,6 @@
     "parameters": {
         "factoryName": {
             "value": "testsatheesh"
-        },
-        "LS_ADLS2_accountKey": {
-            "value": ""
-        },
-        "AzureSqlDatabase_properties_typeProperties_server": {
-            "value": "testazuresqldbnew.database.windows.net"
-        },
-        "AzureSqlDatabase_properties_typeProperties_database": {
-            "value": "testazuresqldb"
-        },
-        "AzureSqlDatabase_properties_typeProperties_userName": {
-            "value": "sqladmin"
-        },
-        "LS_ADLS2_properties_typeProperties_url": {
-            "value": "https://satheeshstg1.dfs.core.windows.net/"
-        },
-        "LS_AzureKeyVault_properties_typeProperties_baseUrl": {
-            "value": "https://SatheeshKeyValut.vault.azure.net/"
         }
     }
 }
