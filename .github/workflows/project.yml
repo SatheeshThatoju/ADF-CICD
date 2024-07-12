@@ -64,5 +64,5 @@ jobs:
           resourceGroupName: rg_satheesh
           dataFactoryName: testsatheesh
           armTemplateFile: ./armtemplates/ARMTemplateForFactory.json
-          #armTemplateParametersFile: ./ARMTemplateParametersForFactory.json
+          armTemplateParametersFile: ./ARMTemplateParametersForFactory.json
 ################### End of workflow file ###################
